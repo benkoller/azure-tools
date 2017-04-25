@@ -1,6 +1,6 @@
 #!/bin/sh
 
 if ! azure account show &>/dev/null ; then
-	azure login
+	azure login --environment AzureGermanCloud
 	azure account list
 fi
